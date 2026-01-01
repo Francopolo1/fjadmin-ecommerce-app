@@ -40,8 +40,8 @@ SECRET_KEY = 'django-insecure-5^eacloiozx6x4#9^d1n9l#ez*l7&g^r$w#l6w)j$j#8f0yv9s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fjadmin-ecommerce-app-production.up.railway.app', 'https://fjadmin-ecommerce-app-production.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['https://fjadmin-ecommerce-app-production.up.railway.app']   
+ALLOWED_HOSTS = ['https://fjadmin.com', fjadmin-ecommerce-app-production.up.railway.app', 'https://fjadmin-ecommerce-app-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://fjadmin.com', 'https://fjadmin-ecommerce-app-production.up.railway.app']   
 
 
 # Application definition
