@@ -219,7 +219,7 @@ def billing_info(request):
             "currency_code": "USD",
             "notify_url": "https://{}{}".format(host, reverse('paypal-ipn')),
             "return_url": "https://{}{}".format(host, reverse('payment_success')),
-            "cancel_return": "http://{}{}".format(host, reverse('checkout')),
+            "cancel_return": "http://{}{}".format(host, reverse('payment_failed')),
         }
         # Create the paypal form instance 
         paypal_form = PayPalPaymentsForm(initial=paypal_dict)
