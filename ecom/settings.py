@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'cart',
     'payment',
     'whitenoise.runserver_nostatic',
+    'paypal.standard.ipn',
 
 ]
 
@@ -202,3 +203,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
+
+# Add paypal settings
+# Set sandbox to True for testing environment
+PAYPAL_TEST = True
+
+PAYPAL_RECEIVER_EMAIL = os.getenv('PAYPAL_RECEIVER_EMAIL') # Your PayPal business email
